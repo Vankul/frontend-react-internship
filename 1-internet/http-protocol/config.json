@@ -1,5 +1,5 @@
 {
-  "homeRequestHead": "",
-  "homeResponse": "",
-  "notFoundResponse": ""
+  "homeRequestHead": "GET / HTTP/1.1",
+  "homeResponse": "HTTP/1.1 200 OK\r\nAccept-Ranges: bytes\r\nContent-Type: text/plain\r\nContent-Length: 5\r\n\r\nHello",
+  "notFoundResponse": "HTTP/1.1 404 NOT FOUND\r\nAccept-Ranges: bytes\r\nContent-Type: text/plain\r\nContent-Length: 9\r\n\r\nNot found"
 }

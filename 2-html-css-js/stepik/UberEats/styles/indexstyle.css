@@ -1,0 +1,64 @@
+.restourant{
+    margin-top: 56px;
+}
+
+.name-restourant{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 16px;
+    color: #1D1D1D;
+}
+
+.cost{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #626262;
+    margin: 0;
+    margin-top: 4px;
+}
+.time{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #1D1D1D;
+    margin-bottom: 36px;
+    margin-top: 4px;
+}
+
+.searh{
+    margin-top: 80px;
+    outline:none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #b0b0b0;
+    border: none;
+    width: 100%;
+}
+
+h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+
+
+.img-card{
+    width: 100%;
+}
+
+.menu{
+    margin-bottom: 80px;
+}
+
+.hr1{
+    height: 1px;
+    border: 0;
+    background-color: rgba(97, 97, 97, 0.4);;
+    margin-top: 0px;
+}

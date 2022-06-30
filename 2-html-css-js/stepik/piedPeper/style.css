@@ -1,0 +1,201 @@
+header{
+    background-color: #007765;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
+
+h1{
+    text-align:center;
+}
+body{
+    margin: 0px;
+    min-width: 1219px;
+    font-family: 'Roboto', sans-serif;
+}
+.hero {
+    background-image: url(/img/image.png);
+    background-size: cover;
+    background-position: center center;
+    color: rgb(255, 254, 254);
+    padding: 128px 0px;
+    margin-top: 92px;
+}
+  
+.named{
+    font-family:'Roboto', sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 108px;
+}
+
+.team{
+    background-color: #EEEEEE;
+    margin-top: 92px;
+    padding-bottom: 92px;
+}
+
+.title{
+    padding-top: 48px;
+    color: #007765;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+    letter-spacing: 0em;
+    margin: 0;
+}
+
+.text{
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0px;
+    padding-top: 16px;
+   
+}
+.header > h3{
+    display: block;
+    padding-top: 8px;
+    padding-left: 8px;
+    float:right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#fff;
+}
+.spisok{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hello{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.ppc{
+    float:left;
+    padding-right: 48px;
+}
+
+.footer{
+    background-color: #333333;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.textfoot{
+    
+    font-family: 'Roboto', sans-serif ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color:#fff;
+    
+}
+
+div{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width:1109px;
+    padding:0px 55px;
+}
+
+.foot{
+    max-width:579px;
+    padding: 48px 340px 64px 340px;
+    
+}
+
+.pied{
+    padding:  160px 0px;
+}
+.piedpeper{
+    background-image: url(/img/image2.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+a{
+    color: #EEEEEE;
+    text-decoration: none;
+}
+a:hover {
+    color: #005044;
+}
+.card{
+    width: 350px;
+}
+.foto{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    width: 168px;
+    height: 168px;
+    margin-bottom: 12px;
+}
+.temate{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #007765;
+    text-align: center;
+    margin: 0;
+}
+.podpis{
+    font-family: 'Roboto',sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0;
+}
+
+li{
+    padding-top: 24px;
+    padding-bottom: 28px;
+}
+
+.ref{
+    border-top: 82px solid transparent;
+	margin-top: -82px;
+	/* паддинги - без проблем */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}

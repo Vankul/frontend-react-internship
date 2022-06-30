@@ -1,0 +1,242 @@
+.hero{
+    background-image: url("/assets/images/ph.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0px;
+}
+.hero-box{
+    background-color: #FFFFFF;
+    padding: 0;
+   
+}
+.hero-restuarant{
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #1D1D1D;
+    padding: 0 38px;
+    padding-top: 38px;
+}
+.kithen-hero{
+    margin-top: 62px;
+    margin-bottom: 46px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #626262;
+    padding-left: 38px;
+}
+
+.time-hero{
+    margin-left: auto;
+    margin-right: 52px;
+    border-radius: 16px;
+    margin-top: 54px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 8px 16px;
+    background-color: #262626;
+    color: #FFFFFF;
+    height: max-content;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.need-show-340{
+    display: none;
+}
+
+
+.list{
+    display: flex;
+    gap:40px;
+}
+.icon-list{
+    text-decoration: none;
+}
+.item-menu{
+    margin-top: 32px;
+    margin-bottom: 29px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #626262;
+}
+.active{
+    color: #327430;
+}
+
+
+
+
+.point-menu{
+    margin-top: 56px;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    color: #1D1D1D;
+}
+.zak{
+    width: 50px;
+    margin-bottom: 43px;
+    display: none;
+}
+.menu{
+    margin-bottom: 80px;
+}
+.card{
+    padding-bottom: 49px;
+}
+.card-inline{
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.card-inline:hover{
+    background-color: #f8f8f8;
+}
+.vse-bludo{
+    padding-left: 16px;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.name-bludo{
+    color: #1D1D1D;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.podpis-bludo{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #626262;
+    margin: 0px;
+    margin-top: 4px;
+}
+.cost{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    color: #1D1D1D;
+    margin-bottom: 16px;
+    
+}
+.img-card{
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .need-hide-768{
+        display: none;
+    }
+    .zak{
+        display: block;
+    }
+    .point-menu{
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .card{
+        padding-bottom: 32px;
+    }
+    .menu{
+        margin-bottom: 48px;
+    }
+
+    .img-card{
+        max-width: 200px;
+        max-height: 160px;
+    }
+    
+}
+@media (max-width: 320px){
+    .card-col{
+        border: none;
+        border-bottom: 1px solid #D8D8D8;
+    }
+    .name-bludo{
+        font-size: 14px;
+    }
+    .card{
+        padding-bottom: 16px;
+    }
+    .menu{
+        margin-bottom: 40px;
+    }
+    .hero-restuarant{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .hero-box{
+        margin: 0 auto ;
+        transform: translate(0px,131px);
+        box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+    }
+    .point-menu{
+        margin-top:187px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .hero{
+        padding: 0;
+    }
+    .need-hide-340{
+        display: none;
+    }
+    .need-show-340{
+        display: block;
+    }
+    .kithen-hero{
+        margin: 0px;
+        padding: 0 87px;
+        padding-bottom: 16px;
+        
+    }
+    .hero-restuarant{
+        padding: 0 45px 40px 45px;
+        margin: 0;
+    }
+    .time-hero{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        margin: 0 105px; 
+    }
+    .hero-box{
+        padding: 24px 0;
+    }
+    .img-card{
+        max-width: 102px;
+        max-height: 102px;
+    }
+    .cost{
+        margin-bottom: 8px;
+    }
+    .vse-bludo{
+        padding-top: 8px;
+        padding-left: 10px;
+    }
+    .podpis-bludo{
+        margin-top: 0;
+        line-height: 15px;
+    }
+}
