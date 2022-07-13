@@ -184,18 +184,18 @@ img {
     background-color: var(--footer-color);
 }
 
-/*=============== reservation ===============*/
-.reservation__content{
+/*=============== home ===============*/
+.home__content{
   grid-template-columns: auto auto;
 }
-.reservation__title{
+.home__title{
   font-size: var(--h1-font-size);
   line-height: 4.5rem;
 }
-.reservation__button{
+.home__button{
   margin-top: 1rem;
 }
-.reservation-3__container{
+.home-3__container{
   gap: 2rem;
 }
 
@@ -209,7 +209,7 @@ img {
   height: 36.75rem;
   margin-bottom: 6rem;
 }
-.home-img__part-bottom{
+.home-img__part_bottom{
   margin-bottom: 0rem;
   margin-top: 4.70rem;
 }
@@ -324,8 +324,8 @@ img {
   color: var(--white-color);
 }
 
-/*====================RES=====================*/
-.res__container{
+/*====================reservation=====================*/
+.reservation__container{
   grid-template-columns: 1fr 1fr;
   gap:0;
 }
@@ -334,19 +334,19 @@ img {
   color:hsla(226, 30%, 37%, 1);
   font-weight: var(--font-medium);
 }
-.res__button{
+.reservation__button{
   margin-left: 1rem;
   background-color: var(--white-color);
   color: var(--title-color);
   border: solid var(--title-color) 1px;
 }
-.res__button:hover{
+.reservation__button:hover{
   background-color: rgb(197, 196, 196);
 }
-.res__paragraph{
+.reservation__paragraph{
   margin-right: 14.25rem;
 }
-
+/*questions*/
 .questions__container{
   padding: 0;
   gap: 1.5rem;
@@ -386,7 +386,6 @@ img {
 .questions__description{
   padding:0 1.875rem 2.25rem 1.875rem;
 }
-
 .questions__item,
 .questions__header,
 .questions__item-title,
@@ -395,18 +394,15 @@ img {
 .questions__content{
   transition: .3s;
 }
-
 .questions__item:hover{
   box-shadow: 0 2px 15px rgb(226, 226, 226);
 }
-
 
 /*Rotate icon, change color of titles and back*/
 .accordion-open .questions__header,
 .accordion-open .questions__content{
   background-color: var(--first-color);
 }
-
 .accordion-open .questions__item-icon{
   transform: rotate(180deg);
   background-color: #FF620A;
