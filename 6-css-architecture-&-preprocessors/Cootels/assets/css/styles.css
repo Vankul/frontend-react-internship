@@ -1,0 +1,415 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 7.5rem;
+    /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --text-color: hsl(224, 19%, 60%);
+  --title-color: hsl(231, 53%, 21%);
+  --button-color: hsl(226, 58%, 13%);
+  --footer-color: hsl(219, 78%, 20%);
+  --white-color: rgb(255, 255, 255);
+  --link-color: hsl(226, 30%, 37%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Inter', sans-serif;
+  --title-font: 'Montserrat', sans-serif;
+  --h1-font-size: 2.75rem;
+  --h2-font-size: 2.25rem;
+  --h3-font-size: 1.5rem;
+  --normal-font-size: 1.125em;
+  --small-font-size: 1rem;
+  --smaller-font-size: .75rem;
+  --logo-font-size: 1.75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-top: var(--header-height);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--white-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  font-family:  var(--title-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 24rem;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 7.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 7.875rem;
+}
+
+.section {
+  padding: 5rem 0 5rem;
+}
+
+.section__title {
+  font-size: var(--h2-font-size);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.text-container{
+  margin: auto 0;
+}
+
+.title{
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  margin-bottom: 1.5rem;
+  line-height: 3.375rem;
+}
+
+.paragraph{
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.main {
+    overflow: hidden;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 15%;
+  z-index: var(--z-fixed);
+}
+
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__menu{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    column-gap: 2rem;
+    justify-content: space-between;
+}
+.nav__link{
+    color: var(--title-color);
+    font-size:var(--small-font-size);
+    font-weight: var(--font-regular);
+    transition: .3s;
+}
+.nav__link:hover{
+    color: var(--first-color);
+}
+.nav__logo{
+    font-weight: var(--font-semi-bold);
+    font-size: var(--logo-font-size);
+    color: var(--title-color);
+    transition: .3s;
+    font-family: var(--title-font);
+} 
+.nav__logo:hover{
+    color:var(--footer-color);
+}
+  
+/*=============== BUTTON ===============*/
+.button{
+    display: inline-block;
+    background-color: var(--button-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+    font-size: var(--small-font-size);
+    transition: .3s;
+    border-color: var(--white-color);
+    cursor: pointer;
+}
+.button-join{
+    padding: .875rem 1rem;
+}
+.button:hover{
+    background-color: var(--footer-color);
+}
+
+/*=============== reservation ===============*/
+.reservation__content{
+  grid-template-columns: auto auto;
+}
+.reservation__title{
+  font-size: var(--h1-font-size);
+  line-height: 4.5rem;
+}
+.reservation__button{
+  margin-top: 1rem;
+}
+.reservation-3__container{
+  gap: 2rem;
+}
+
+.home-img{
+  width: 588px;
+  display: flex;
+  justify-content: space-between;
+}
+.home-img__part{
+  width: 11.25rem;
+  height: 36.75rem;
+  margin-bottom: 6rem;
+}
+.home-img__part-bottom{
+  margin-bottom: 0rem;
+  margin-top: 4.70rem;
+}
+
+/*=============== ROOMS ===============*/
+.rooms__text-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.rooms__paragraph{
+  margin-left: 19rem;
+  margin-right: 19rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.rooms__cards{
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5.5rem;
+}
+.rooms__img{
+  height: 490px;
+  margin-bottom: 2rem;
+}
+.rooms__title{
+  font-size: var(--h3-font-size);
+  line-height: 2.25rem;
+  margin-bottom: 1rem;
+}
+.rooms__description{
+  margin-bottom: 2rem;
+}
+.rooms__link{
+  color: var(--text-color);
+}
+.rooms_button{
+  display: inline-flex;
+  flex-direction: row;
+  color:hsla(226, 30%, 37%, 1);
+}
+.rooms_button i{
+  margin: auto 0;
+  margin-left: 0.6rem;
+}
+
+/*=============== CUSTOMERS ===============*/
+.customers__paragraph{
+  margin:0 12.5rem 3.5rem;
+  text-align: center;
+}
+.customers__author{
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: var(--font-semi-bold);
+}
+.customers__img{
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  margin: 2.25rem 0 3.75rem;
+}
+
+/*=============== FOOTER ===============*/
+.footer__container{
+  grid-template-columns: 1fr 1fr;
+}
+.footer{
+  background-color: var(--title-color);
+  padding: 7.5rem 0;
+}
+.footer__logo{
+  font-size: 2rem;
+  color:var(--white-color);
+  font-family: var(--title-font);
+}
+.footer__text{
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: var(--font-regular);
+  color:var(--white-color);
+}
+.footer__lists{
+  display: flex;
+  justify-content: space-between;
+}
+.footer__texts{
+  margin-top: .75rem;
+}
+.fotter__title{
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+  font-weight: 700;
+}
+.footer__links{
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.footer__link{
+  color: var(--white-color);
+  font-weight: var(--font-regular);
+  font-size: var(--small-font-size);
+}
+.footer__social{
+  margin-top: 2.25rem;
+  display: flex;
+  column-gap: 1.5rem;
+}
+.footer__social-link{
+  font-size: 2rem;
+  color: var(--white-color);
+}
+
+/*====================RES=====================*/
+.res__container{
+  grid-template-columns: 1fr 1fr;
+  gap:0;
+}
+.paragraph-start{
+  margin-bottom: 0.75rem;
+  color:hsla(226, 30%, 37%, 1);
+  font-weight: var(--font-medium);
+}
+.res__button{
+  margin-left: 1rem;
+  background-color: var(--white-color);
+  color: var(--title-color);
+  border: solid var(--title-color) 1px;
+}
+.res__button:hover{
+  background-color: rgb(197, 196, 196);
+}
+.res__paragraph{
+  margin-right: 14.25rem;
+}
+
+.questions__container{
+  padding: 0;
+  gap: 1.5rem;
+}
+.questions__item{
+  box-shadow: 0 0 20px 5px rgb(235, 235, 235);
+}
+.questions__header i,
+.questions__header h3{
+  
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--h3-font-size);
+  color: hsla(226, 30%, 37%, 1);
+}
+.questions__item-icon{
+  border-radius: 50%;
+  background-color: #FFECE2;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.questions__header i{
+  color:#FF620A;
+}
+.questions__header{
+  margin: 1.875rem 2.25rem 1.5rem 2.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+.questions__content{
+  overflow: hidden;
+  height: 0;
+  margin-top: 0.375rem;
+}
+.questions__description{
+  padding:0 1.875rem 2.25rem 1.875rem;
+}
+
+.questions__item,
+.questions__header,
+.questions__item-title,
+.questions__item-icon,
+.questions__description,
+.questions__content{
+  transition: .3s;
+}
+
+.questions__item:hover{
+  box-shadow: 0 2px 15px rgb(226, 226, 226);
+}
+
+
+/*Rotate icon, change color of titles and back*/
+.accordion-open .questions__header,
+.accordion-open .questions__content{
+  background-color: var(--first-color);
+}
+
+.accordion-open .questions__item-icon{
+  transform: rotate(180deg);
+  background-color: #FF620A;
+  color: var(--white-color);
+}
+
