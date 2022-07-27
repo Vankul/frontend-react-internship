@@ -1,0 +1,108 @@
+.header{
+  width: 100%;
+}
+
+.nav{
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    column-gap: 2rem;
+    justify-content: space-between;
+  }
+
+  &__link{
+    color: $black-color;
+    font-size: $normal-font-size;
+    font-weight: $font-medium;
+    transition: .3s;
+  }
+
+  &__logo{
+    display: inline-flex;
+    font-weight: $font-regular;
+    font-size: $logo-font-size;
+    color: $black-color;
+    transition: .3s;
+
+    &_grey{
+      color: $secondary-color;
+    }
+  }
+
+  &__button{
+    padding: 1rem 3.5rem;
+    font-size: $big-font-size;
+    border: solid $black-color 2px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .nav{
+    height: 6.5rem;
+
+    &__list{
+      column-gap: 2rem;
+    }
+  
+    &__link{
+      font-size: 0.875rem;
+    }
+  
+    &__logo{
+      font-size: 1.875rem;
+    }
+
+    &__button{
+      padding: 0.75rem 2.5rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px){
+  .nav{
+    height: 6.5rem;
+
+    &__list{
+      display: none;
+    }
+  
+    &__logo{
+      font-size: 1.875rem;
+    }
+
+    &__button{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 320px){
+  .nav{
+    height: 4.25rem;
+
+    &__list{
+      display: none;
+    }
+  
+    &__logo{
+      font-size: 1.5rem;
+    }
+
+    &__button{
+      display: none;
+    }
+  }
+}

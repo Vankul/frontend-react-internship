@@ -1,0 +1,335 @@
+.skills{
+    &__title{
+        text-align: center;
+        margin-bottom: 5.625rem;
+    }
+    &__container{
+        margin-bottom: 7rem;
+        grid-template-areas: 
+        "first second third" 
+        "first fourth fourth";
+        gap: 1.125rem;
+    }
+    &__card{
+        background-color: $background-color-card;
+        border-radius: 10px;
+        position: relative;
+        padding: 42px 35px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        &-1{
+            grid-area: first;
+        }
+        &-2{
+            grid-area: second;
+        }
+        &-3{
+            grid-area: third;
+            padding-top: 0;
+        }
+        &-4{
+            grid-area: fourth;
+            display: flex;
+        }
+
+        &-img{
+            &_1st{
+                width: 390px;
+            }
+            &_2nd{
+                width: 290px;
+                position: absolute;
+                right: 19px;
+                top: 10px;
+            }
+            &_3rd{
+                width: 371px;
+                height: 247px;
+            }
+            &_4rd{
+                height: 255px;
+                width: 382px;
+            }
+        }
+
+        &-title{
+            font-size: $h3-font-size;
+            line-height: 5rem;
+            &_absolute{
+                margin-top: 13rem;
+            }
+        }
+
+        &-description{
+            font-size: 0.875rem;
+            margin-bottom: 2.25rem;
+        }
+
+        &-button{
+            font-size: $normal-font-size;
+            padding: 15px 50px;
+            border-radius: 5px;
+            background-color: $primary-color;
+            color: $white-color;
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px){
+    .skills{
+        &__title{
+            margin-bottom: 3.5rem;
+            font-size: 2.25rem;
+        }
+        &__container{
+            margin-bottom: 2rem;
+            gap: .75rem;
+        }
+        &__card{
+            padding: 1.75rem 0;
+
+            &-img{
+                &_1st{
+                    width: 260px;
+                    height: 260px;
+                    margin: 0 1.25rem;
+                }
+                &_2nd{
+                    width: 205px;
+                    position: absolute;
+                    right: 10px;
+                    top: 5px;
+                }
+                &_3rd{
+                    width: 243px;
+                    height: 162px;
+                    margin-bottom: .75rem;
+                }
+                &_4rd{
+                    height: 169px;
+                    width: 254px;
+                }
+            }
+    
+            &-title{
+                margin-bottom: .75rem;
+                padding: 0 1.75rem;
+                font-size: 1.25rem;
+                line-height: 1.875rem;
+                &_absolute{
+                    margin-top: 11.25rem;
+                }
+            }
+    
+            &-description{
+                padding:0 1.75rem;
+                margin-bottom: 2.25rem;
+                margin-bottom: 1.5rem;
+            }
+    
+            &-button{
+                margin-left: 1.75rem;
+                font-size: 0.875rem;
+                padding: 1.125rem 2.625rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .skills{
+        &__title{
+            margin-bottom: 3rem;
+            font-size: 1.875rem;
+        }
+        &__container{
+            margin-bottom: 2rem;
+            gap: .625rem;
+        }
+        &__card{
+            padding: 1.75rem 0;
+
+            &-img{
+                &_1st{
+                    width: 214px;
+                    height: 214px;
+                    margin: 0;
+                    margin-bottom: 2.75rem;
+                    margin-top: .75rem;
+                }
+                &_2nd{
+                    width: 200px;
+                    position: absolute;
+                    right: 10px;
+                    top: 14px;
+                }
+                &_3rd{
+                    margin-top: 1.25rem;
+                    width: 216px;
+                    height: 144px;
+                    margin-bottom: .75rem;
+                }
+                &_4rd{
+                    height: 134px;
+                    width: 200px;
+                }
+            }
+    
+            &-title{
+                margin-bottom: .75rem;
+                padding: 0 1.75rem;
+                font-size: 1.25rem;
+                line-height: 1.875rem;
+                &_absolute{
+                    margin-top: 11.25rem;
+                }
+            }
+    
+            &-description{
+                padding:0 1.75rem;
+                margin-bottom: 2.25rem;
+                margin-bottom: 1.5rem;
+                font-size: 13px;
+            }
+    
+            &-button{
+                margin-left: 1.75rem;
+                font-size: 0.75rem;
+                padding: 1rem 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px){
+    .skills{
+        &__container{
+            margin-bottom: 2rem;
+            grid-template-areas: 
+            "first second " 
+            "third fourth";
+            gap: 2rem;
+        }
+
+        &__card{
+            padding: 1.75rem 0;
+            &-1{
+                padding-top: 0;
+            }
+            &-4{
+                flex-direction: column-reverse;
+            }
+            &-img{
+                &_1st{
+                    width: 185px;
+                    height: 185px;
+                    margin: 0;
+                    margin-left: 1rem;
+                }
+                &_2nd{
+                    width: 182px;
+                    position: absolute;
+                    right: 35px;
+                    top: 10px;
+                }
+                &_3rd{
+                    margin-top: 1rem;
+                    width: 198px;
+                    height: 132px;
+                    margin-bottom: 1rem;
+                }
+                &_4rd{
+                    margin: 0.5rem 0 1rem 1rem;
+                    height: 137px;
+                    width: 206px;
+                }
+            }
+    
+            &-title{
+                margin-bottom: .75rem;
+                padding: 0 1.5rem;
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                &_absolute{
+                    margin-top: 10.25rem;
+                }
+            }
+    
+            &-description{
+                padding:0 1.5rem;
+                margin-bottom: 2.25rem;
+                margin-bottom: 1.5rem;
+                font-size: 0.75rem;
+            }
+    
+            &-button{
+                margin-left: 1.75rem;
+                font-size: 0.75rem;
+                padding: 1rem 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .skills{
+        &__container{
+            grid-template-areas: 
+            "first"
+            "second" 
+            "third"
+            "fourth";
+            gap: 2rem;
+        }
+
+        &__card{
+            padding: 1.75rem 0;
+            &-img{
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 1.5rem;
+                &_1st{
+                    width: 213px;
+                    height: 213px;
+                    text-align: center;
+                }
+                &_2nd{
+                    width: 182px;
+                    position:initial;
+                }
+                &_3rd{
+                    width: 198px;
+                    height: 132px;
+                }
+                &_4rd{
+                    height: 137px;
+                    width: 206px;
+                }
+            }
+    
+            &-title{
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                &_absolute{
+                    margin-top: 0;
+                }
+            }
+    
+            &-description{
+                padding:0 1.5rem;
+                margin-bottom: 2.25rem;
+                margin-bottom: 1.5rem;
+                font-size: 0.75rem;
+            }
+    
+            &-button{
+                margin-left: 1.5rem;
+                font-size: 0.75rem;
+                padding: 1rem 2rem;
+            }
+        }
+    }
+}
