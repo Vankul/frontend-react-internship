@@ -155,6 +155,10 @@ button {
   width: 100%;
 }
 
+.show-menu {
+  right: 0;
+}
+
 .nav {
   height: 180px;
   display: flex;
@@ -195,6 +199,17 @@ button {
   font-size: 1.5em;
   border: solid hsl(0deg, 0%, 0%) 2px;
 }
+.nav__close {
+  cursor: pointer;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  display: none;
+}
+.nav__toggle {
+  cursor: pointer;
+  color: hsl(200deg, 19%, 18%);
+  display: none;
+}
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -219,8 +234,30 @@ button {
   .nav {
     height: 6.5rem;
   }
+  .nav__menu {
+    position: fixed;
+    background-color: hsl(200deg, 19%, 18%);
+    width: 80%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    padding: 4rem 0 0 3rem;
+    border-radius: 1rem 0 0 1rem;
+    transition: 0.3s;
+    z-index: 10;
+  }
+  .nav__toggle {
+    display: inline;
+    font-size: 2rem;
+  }
   .nav__list {
-    display: none;
+    padding-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .nav__link {
+    font-size: 1.875rem;
+    color: hsl(0deg, 0%, 100%);
   }
   .nav__logo {
     font-size: 1.875rem;
@@ -228,19 +265,30 @@ button {
   .nav__button {
     display: none;
   }
+  .nav__close {
+    display: inline;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .nav__menu {
+    width: 100%;
+    border-radius: 0;
+    padding: 1rem;
+  }
 }
 @media screen and (max-width: 320px) {
   .nav {
     height: 4.25rem;
   }
-  .nav__list {
-    display: none;
-  }
   .nav__logo {
     font-size: 1.5rem;
   }
-  .nav__button {
-    display: none;
+  .nav__link {
+    font-size: 1.25rem;
+    gap: 2rem;
   }
 }
 .hero__container {

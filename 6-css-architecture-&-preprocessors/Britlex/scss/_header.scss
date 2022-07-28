@@ -1,7 +1,9 @@
 .header{
   width: 100%;
 }
-
+.show-menu{
+  right: 0;
+}
 .nav{
   height: 180px;
   display: flex;
@@ -46,6 +48,19 @@
     font-size: $big-font-size;
     border: solid $black-color 2px;
   }
+
+  &__close{
+    cursor: pointer;
+    color: $white-color;
+    font-size: 2rem;
+    display: none;
+  }
+
+  &__toggle{
+    cursor: pointer;
+    color: $primary-color;
+    display: none;
+  }
 }
 
 @media screen and (max-width: 992px){
@@ -74,9 +89,32 @@
 @media screen and (max-width: 767px){
   .nav{
     height: 6.5rem;
+    &__menu{
+      position: fixed;
+      background-color: $primary-color;
+      width: 80%;
+      height: 100%;
+      top: 0;
+      right: -100%;
+      padding: 4rem 0 0 3rem;
+      border-radius: 1rem 0 0 1rem;
+      transition: .3s;
+      z-index: 10;
+    }
+    &__toggle{
+      display: inline;
+      font-size: 2rem;
+    }
 
     &__list{
-      display: none;
+      padding-top: 2rem;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    &__link{
+      font-size: $h3-font-size;
+      color: $white-color;
     }
   
     &__logo{
@@ -86,23 +124,37 @@
     &__button{
       display: none;
     }
+
+    &__close{
+      display: inline;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 575px){
+  .nav{
+    &__menu{
+      width: 100%;
+      border-radius: 0;
+      padding: 1rem;
+    }
   }
 }
 
 @media screen and (max-width: 320px){
   .nav{
     height: 4.25rem;
-
-    &__list{
-      display: none;
-    }
   
     &__logo{
       font-size: 1.5rem;
     }
 
-    &__button{
-      display: none;
+    &__link{
+      font-size: 1.25rem;
+      gap: 2rem;
     }
   }
 }
