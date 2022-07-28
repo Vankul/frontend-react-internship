@@ -155,10 +155,6 @@ button {
   width: 100%;
 }
 
-.show-menu {
-  right: 0;
-}
-
 .nav {
   height: 180px;
   display: flex;
@@ -291,6 +287,10 @@ button {
     gap: 2rem;
   }
 }
+.show-menu {
+  right: 0;
+}
+
 .hero__container {
   grid-template-columns: 1fr 1fr;
 }
