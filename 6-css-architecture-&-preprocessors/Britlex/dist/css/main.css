@@ -257,7 +257,7 @@ button {
   }
   .nav__menu {
     position: fixed;
-    background-color: hsla(200deg, 74%, 12%, 0.7);
+    background-color: hsla(202deg, 25%, 20%, 0.8);
     color: hsl(200deg, 19%, 18%);
     height: 100%;
     left: 0;
