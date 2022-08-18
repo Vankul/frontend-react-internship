@@ -303,7 +303,7 @@ button {
   .nav__close {
     display: inline;
     position: absolute;
-    left: 24rem;
+    left: 50%;
     top: 2rem;
     color: hsl(200deg, 19%, 18%);
     font-size: 1.875rem;
