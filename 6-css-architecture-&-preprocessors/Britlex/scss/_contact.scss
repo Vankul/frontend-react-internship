@@ -21,6 +21,7 @@
         border: solid $secondary-color 1px;
         border-radius: 10px;
         padding: 2rem;
+        width: 60%;
     }
     &__button{
         border-radius: 10px;
@@ -46,7 +47,7 @@
             margin-bottom: 1.25rem;  
         }
         &__paragraph{
-            font-size: 0.875rem;
+            font-size: 1rem;
             margin-bottom: 2.25rem;
         }
         &__input{
@@ -55,7 +56,7 @@
         }
         &__button{
             padding: 1.25rem 2.25rem;
-            font-size: 0.875rem;
+            font-size: 1rem;
         }
     }
 }
@@ -64,7 +65,8 @@
     .contact{
         &__container{
             margin-top: 2rem;
-            margin-bottom: 3rem;
+            margin-bottom: 7rem;
+            column-gap: 3rem;
         }
         &__img{
             width: 233px;
@@ -80,6 +82,7 @@
         &__input{
             padding: 1rem 1.5rem;
             font-size: 0.75rem;
+            
         }
         &__button{
             padding: 1rem 2rem;
@@ -108,11 +111,12 @@
         &__input{
             padding: 1.25rem 1.5rem;
             font-size: 13px;
-            max-width: auto;
+            
         }
         &__button{
             padding: 1rem 2rem;
             font-size: 1rem;
+
         }
         &__form{
             justify-content: space-around;

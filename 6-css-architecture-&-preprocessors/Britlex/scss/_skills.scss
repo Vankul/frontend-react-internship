@@ -32,6 +32,7 @@
         &-4{
             grid-area: fourth;
             display: flex;
+            flex-direction: row;
         }
 
         &-img{
@@ -63,12 +64,12 @@
         }
 
         &-description{
-            font-size: 0.875rem;
+            font-size: 1rem;
             margin-bottom: 2.25rem;
         }
 
         &-button{
-            font-size: $normal-font-size;
+            font-size: 1.125rem;
             padding: 15px 50px;
             border-radius: 5px;
             background-color: $primary-color;
@@ -117,7 +118,7 @@
             &-title{
                 margin-bottom: .75rem;
                 padding: 0 1.75rem;
-                font-size: 1.25rem;
+                font-size: 1.375rem;
                 line-height: 1.875rem;
                 &_absolute{
                     margin-top: 11.25rem;
@@ -128,11 +129,12 @@
                 padding:0 1.75rem;
                 margin-bottom: 2.25rem;
                 margin-bottom: 1.5rem;
+                font-size: 0.875rem;
             }
     
             &-button{
                 margin-left: 1.75rem;
-                font-size: 0.875rem;
+                font-size: 1.125rem;
                 padding: 1.125rem 2.625rem;
             }
         }
@@ -175,6 +177,7 @@
                 &_4rd{
                     height: 134px;
                     width: 200px;
+                    align-self: center;
                 }
             }
     
@@ -191,13 +194,13 @@
             &-description{
                 padding:0 1.75rem;
                 margin-bottom: 2.25rem;
-                margin-bottom: 1.5rem;
+                margin-bottom: 1rem;
                 font-size: 13px;
             }
     
             &-button{
                 margin-left: 1.75rem;
-                font-size: 0.75rem;
+                font-size: 1rem;
                 padding: 1rem 2rem;
             }
         }
@@ -267,7 +270,7 @@
     
             &-button{
                 margin-left: 1.75rem;
-                font-size: 0.75rem;
+                font-size: 0.875rem;
                 padding: 1rem 2rem;
             }
         }
