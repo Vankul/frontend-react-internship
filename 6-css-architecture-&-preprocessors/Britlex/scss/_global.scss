@@ -86,10 +86,13 @@ button{
   cursor: pointer;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1404px){
   .container{
     margin: 0 2rem;
   }
+}
+@media screen and (max-width: 992px){
+  
 
   .section{
     padding-bottom: 3.5rem;

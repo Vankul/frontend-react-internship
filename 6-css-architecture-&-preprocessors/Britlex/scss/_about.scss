@@ -31,6 +31,16 @@
     }
 }
 
+@media screen and (max-width: 1200px){
+  .about__container{
+    column-gap: 150px;
+  }
+
+  .about__img{
+    margin:auto 0 ;
+  }
+}
+
 @media screen and (max-width: 992px){
     .about{
         &__img{
@@ -49,7 +59,7 @@
         }
         &__stats{
             margin-top: 1.5rem;
-            column-gap: 100px;
+            column-gap: 70px;
             justify-content: flex-start;
         }
         &__stat{
