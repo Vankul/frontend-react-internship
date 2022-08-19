@@ -1,0 +1,157 @@
+.hero{
+    &__container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__title{
+        display: inline-flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        &-img{
+            margin-top: 5%;
+            width:122px;
+            margin-right: 22%;
+        }
+        &-text{
+            font-size: $h1-font-size;
+            line-height: 80px;
+        }
+    }
+
+    &__button{
+        background-color: $primary-color;
+        border-radius: 15px;
+        color: $white-color;
+        font-size: $logo-font-size;
+        padding: 2rem 7.375rem;
+    }
+    &__paragraph{
+        font-size: $big-font-size;
+        margin-right: 20%;
+        margin-bottom: 3.875rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .hero{
+        &__title{
+            margin-bottom: 1.75rem;
+            &-img{
+                width: 85px;
+                margin-right: 20%;
+                margin-top: 15%;
+            }
+            &-text{
+                font-size: 3rem;
+                line-height: 64px;
+            }
+        }
+    
+        &__button{
+            border-radius: 5px;
+            font-size: 1.5rem;
+            padding: 1.375rem 4.875rem;
+        }
+        &__paragraph{
+            font-size: 1.25rem;
+            margin-right: 10%;
+            margin-bottom: 2rem;
+        }
+        &__img{
+            width: 460px;
+        }
+    }   
+}
+
+
+
+
+@media screen and (max-width: 767px){
+    .hero{
+        &__title{
+            margin-bottom: 1.5rem;
+            &-img{
+                width: 60px;
+                margin-right: 20%;
+                margin-top: 13%;
+            }
+            &-text{
+                font-size: 2.25rem;
+                line-height: 45px;
+            }
+        }
+        &__img{
+            width: 424px;
+            margin: 0 auto;
+        }
+        &__button{
+            border-radius: 5px;
+            font-size: 1.125rem;
+            padding: 1.5rem 4.125rem;
+        }
+        &__paragraph{
+            font-size: 1rem;
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+    }   
+}
+
+@media screen and (max-width: 575px){
+    .hero{
+        &__container{
+            display: flex;
+            text-align: center;
+            flex-direction: column-reverse;
+        }
+
+        &__title{
+            margin-bottom: 1.5rem;
+            &-img{
+                display: none;
+            }
+            &-text{
+                font-size: 2.125rem;
+                line-height: 45px;
+            }
+        }
+    
+        &__button{
+            border-radius: 5px;
+            font-size: 1.125rem;
+            padding: 1.125rem 4.125rem;
+            margin-bottom: 5rem;
+        }
+        &__paragraph{
+            font-size: 1rem;
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+    }   
+
+    .hide{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .hero{
+        &__title{
+            margin-bottom: 1.25rem;
+            &-text{
+                font-size: 1.5rem;
+                line-height: 36px;
+            }
+        }
+
+        &__button{
+            display: inline-flex;
+            font-size: 1rem;
+            padding: 1.125rem 4.125rem;
+        }
+        &__paragraph{
+            font-size: 0.875rem;
+        }
+        
+    }
+}   
