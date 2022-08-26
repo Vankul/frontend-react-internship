@@ -1,3 +1,4 @@
+import '../styles/main.scss'
 /*=============== SHOW MENU ===============*/
 const navMenu = document.querySelector('.nav__menu')
 const navToggle = document.querySelector('.nav__toggle')
