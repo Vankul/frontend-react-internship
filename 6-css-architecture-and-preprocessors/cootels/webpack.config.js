@@ -12,7 +12,8 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     devServer: {
-        port: 4200
+        port: 4200,
+        hot: true,
     },
     plugins: [
         new HTMLWebpackPlugin({
