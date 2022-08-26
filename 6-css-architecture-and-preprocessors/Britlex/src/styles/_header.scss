@@ -1,0 +1,253 @@
+.header{
+  width: 100%;
+}
+
+.nav{
+  height: 180px;
+  display: flex;
+  
+  align-items: center;
+
+  &__menu{
+    width: 100%;
+    &-content{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    column-gap: 2rem;
+    justify-content: space-between;
+  }
+
+  &__link{
+    color: $black-color;
+    font-size: $normal-font-size;
+    font-weight: $font-medium;
+    transition: .3s;
+  }
+
+  &__item{
+    margin: auto 0;
+  }
+
+  &__logo{
+    display: inline-flex;
+    font-weight: $font-regular;
+    font-size: $logo-font-size;
+    color: $black-color;
+    transition: .3s;
+    margin-right: 18%;
+
+    &_grey{
+      color: $secondary-color;
+    }
+
+    &-burger{
+      display: none;
+    }
+  }
+
+  &__hr{
+    display: none;
+  }
+
+  &__button{
+    padding: 1rem 3.5rem;
+    font-size: $big-font-size;
+    border: solid $black-color 2px;
+  }
+
+  &__close{
+    cursor: pointer;
+    color: $white-color;
+    font-size: 2rem;
+    display: none;
+  }
+
+  &__toggle{
+    cursor: pointer;
+    color: $primary-color;
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px){
+  .nav__logo{
+    margin-right: 12%;
+  }
+}
+@media screen and (max-width: 992px){
+  .nav{
+    height: 6.5rem;
+
+    &__list{
+      column-gap: 1.5rem;
+    }
+  
+    &__link{
+      font-size: 0.875rem;
+    }
+  
+    &__logo{
+      font-size: 1.875rem;
+      margin-right: 15%;
+    }
+
+    &__button{
+      padding: 0.75rem 2.5rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px){
+  .nav{
+    height: 6.5rem;
+    justify-content: space-between;
+
+    &__menu{
+      
+      position: fixed;
+      background-color: hsla(202, 25%, 20%, 0.8);
+      color: $primary-color;
+      height: 100%;
+      left: -100%;
+      width: 100%;
+      transition: .2s;
+      z-index: 10;
+      top: 0%;
+      &-content{
+        padding: 40px;
+        width: 58%;
+        background-color: $white-color;
+        display: block;
+        height: 100%;
+      }
+    }
+    &__toggle{
+      display: inline;
+      font-size: 2rem;
+    }
+
+    &__list{
+      padding-top: 2rem;
+      flex-direction: column;
+      gap: 2rem;
+      text-align: start;
+      margin-bottom: 3.5rem;
+    }
+
+    &__hr{
+      display: block;
+    }
+
+    &__link{
+      font-size: 1.375rem;
+      
+    }
+  
+    &__logo{
+      font-size: 1.875rem;
+
+      &-burger{
+        display: flex;
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    &__button{
+      padding: 1rem 4rem;
+    }
+
+
+    &__close{
+      display: inline;
+      position: absolute;
+      left: 50%;
+      top: 2rem;
+      color: $primary-color;
+      font-size: 1.875rem;
+    }
+  }
+}
+
+@media screen and (max-width: 575px){
+  .nav{
+    &__menu{
+      &-content{
+        padding: 2rem;
+        padding-top: 3rem;
+        width: 100%;
+      }
+      
+    }
+    &__logo-burger{
+        margin-bottom: 2.5rem;
+    }
+
+    &__link{
+      font-size: 1.5rem;
+    }
+
+    &__list{
+      margin-bottom: 4rem;
+    }
+
+    &__button{
+      font-size: 1.375rem;
+      padding: 1rem 7.25rem;
+    }
+
+    &__close{
+      left: auto;
+      right: 2rem;
+      top: 3rem;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 320px){
+  .nav{
+    height: 4.25rem;
+    &__menu{
+      &-content{
+        padding: 1rem;
+      padding-top: 1.5rem;
+      }
+    }
+
+    &__logo{
+      font-size: 1.5rem;
+      &-burger{
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__link{
+      font-size: 1.375rem;
+      gap: 2rem;
+    }
+
+    &__button{
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 1.25rem;
+    }
+
+    &__close{
+      right: 1rem;
+      top: 1.5rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.show-menu{
+  left: 0;
+}

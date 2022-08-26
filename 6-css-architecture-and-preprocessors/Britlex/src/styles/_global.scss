@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $body-font;
+  
+  background-color: $background-color;
+  color: $secondary-color;
+}
+
+h1, h2, h3 {
+  color: $primary-color;
+  font-weight: $font-semi-bold;
+  font-family: $body-font;
+}
+
+h2{
+  color: $black-color;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container{
+  max-width: 83.75rem;
+  margin-left: auto;
+  margin-right:  auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.section{
+  padding-bottom: 6.5rem;
+}
+
+.section__title {
+  font-size: $h2-font-size;
+  color: $black-color;
+  &_hidden{
+    display: none;
+  }
+}
+
+.text-container{
+  margin: auto 0;
+}
+
+.main {
+  overflow: hidden;
+}
+
+/*========Button========*/
+.button{
+  display: inline-block;
+  background-color: $background-color;
+  color: $black-color;
+  border-radius: 5px;
+  border: none;
+  transition: .3s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1404px){
+  .container{
+    margin: 0 2rem;
+  }
+}
+@media screen and (max-width: 992px){
+  
+
+  .section{
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .section{
+    padding-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 575px){
+  .section__title_hidden{
+    display: inline;
+    text-align: center;
+    &-before{
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 320px){
+  .container{
+    margin: 0 0.875rem;
+  }
+
+  .section{
+    padding-bottom: 3.5rem;
+  }
+}
