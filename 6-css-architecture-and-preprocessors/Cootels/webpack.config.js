@@ -6,14 +6,14 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
-    entry: './scripts/index.js',
+    entry: './assets/scripts/index.js',
     output: {
         filename: '[contenthash].js',
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: '../index.html'
+            template: './index.html'
         }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({
