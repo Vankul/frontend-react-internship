@@ -1,3 +1,6 @@
+import '../css/styles.css'
+
+
 /*=============== QUESTIONS ACCORDION ===============*/
 const accordionItems = document.querySelectorAll('.questions__item')
 
