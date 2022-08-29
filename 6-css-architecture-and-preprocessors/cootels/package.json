@@ -1,15 +1,11 @@
 {
   "name": "cootels",
   "version": "1.0.0",
-  "description": "https://www.figma.com/file/nlMTmQobXkx5yz5QfP2xjF/Cootels-MinimalistWebsiteLandingPage?node-id=659%3A46",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "dev": "webpack server"
+    "dev": "webpack serve --open"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
