@@ -1,7 +1,7 @@
 const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin'); 
+const CopyWebpackPlugin = require('copy-webpack-plugin');  
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -10,6 +10,10 @@ module.exports = {
     output: {
         filename: '[contenthash].js',
         path: path.resolve(__dirname, 'dist')
+    },
+    devServer: {
+        port: 4200,
+        hot: true,
     },
     plugins: [
         new HTMLWebpackPlugin({
